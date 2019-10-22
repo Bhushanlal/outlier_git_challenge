@@ -19,6 +19,7 @@ function respondHello (req, res) {
 function respondUserAgent (req, res) {
   const ua = req.headers['user-agent']
   res.end(JSON.stringify({ ua }))
+}
 
 function respondBase64 (req, res) {
   const phrase = req.url.replace(/^\/b64\//, '')
